@@ -39,9 +39,15 @@
         </ul>
 
     </div>
+    {% if this_tutor %}
     <div id="this_tutor">
         <h2>{{this_tutor.first_name}}'s Tutor Profile</h2>
     </div>
+    {% else %}
+    <div>
+        <h2>Welcome to Your Tutor Profile</h2>
+    </div>
+    {% endif %}
     <div>
         <h3>Subjects Needing Tutoring</h3>
         <!-- insert code to populate subjects for tutoring -->
